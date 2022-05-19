@@ -1,0 +1,36 @@
+#rodape {
+    padding: 32px 0 43px 0;
+    background-color: var(--fundo-rodape);
+    color: var(--cor-texto-rodape);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+#rodape a:hover{
+    transition: color .3s;
+    color: #557387;
+}
+
+#rodape p {
+    letter-spacing: initial;
+    text-transform: none;
+    text-align: right;
+}
+
+#rodape .container:first-child {
+    margin-bottom: 32px;
+}
+
+@media (max-width: 530px) {
+    #rodape .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #rodape p {
+        text-align: center;
+        margin-top: 15px;
+    }
+}
